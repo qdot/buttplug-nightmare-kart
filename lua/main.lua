@@ -40,10 +40,6 @@ function ReadPlayerLocation()
       print("Cannot find BP_KartPawn_C instance")
     else
       print("Found BP_KartPawn_C")
-      local KartUI = KartPawn.UW_KartUI_C
-      if not KartUI:IsValid() then
-        print("Cannot get valid UI instance")
-      end
       print(string.format("[ButtplugNMKartMod] Accelerating: %s", KartPawn.IsAccelerating))
     end
 end
